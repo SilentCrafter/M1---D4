@@ -1,0 +1,143 @@
+#pinterest-board {
+  user-select: none;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.45);
+  width: 440px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  top: 20vh;
+  border-radius: 24px;
+  transition: 0.7s ease;
+}
+
+#pic {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+#pinterest-board:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: black 2s linear 0.2s;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.45);
+}
+
+#link {
+  border-radius: 25px 25px;
+  width: 200px;
+  height: 50px;
+  background-color: aliceblue;
+  margin-left: 1.4em;
+  top: 35em;
+  position: absolute;
+  color: black;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+#link .fa-solid {
+  position: absolute;
+  left: 19px;
+  top: 1em;
+  size: 10px;
+}
+#link h5 {
+  font-family: arial;
+  position: absolute;
+  left: 2.7em;
+  font-size: 20px;
+  top: -1em;
+}
+
+#share {
+  position: absolute;
+  background-color: aliceblue;
+  border-radius: 28px 28px;
+  width: 50px;
+  height: 50px;
+  top: 35em;
+  left: 19em;
+  opacity: 0;
+  transition: 0.3s;
+}
+#share .fa-solid {
+  background-color: aliceblue;
+  position: absolute;
+  left: 0.6em;
+  top: 1em;
+}
+#menu {
+  position: absolute;
+  background-color: aliceblue;
+  border-radius: 28px 28px;
+  width: 50px;
+  height: 50px;
+  top: 35em;
+  left: 23em;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+#menu .fa-solid {
+  background-color: aliceblue;
+  position: absolute;
+  left: 0.6em;
+  top: 1em;
+}
+#save {
+  font-family: Helvetica;
+  font-size: 20px;
+  position: absolute;
+  background-color: #e60023;
+  border-radius: 28px;
+  width: 100px;
+  height: 50px;
+  top: -2em;
+  left: 16.1em;
+  text-align: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+#save h5 {
+  font-size: large;
+  color: aliceblue;
+  position: absolute;
+  bottom: -16px;
+  left: 27.5px;
+}
+
+/*               ANIMATIONS               */
+
+#pinterest-board:hover #save {
+  opacity: 0.9;
+  top: 0.9em;
+}
+#pinterest-board:hover #menu {
+  opacity: 0.9;
+  top: 33em;
+}
+#pinterest-board:hover #link {
+  opacity: 0.9;
+  top: 33em;
+}
+#pinterest-board:hover #share {
+  opacity: 0.9;
+  top: 33em;
+}
+#pinterest-board:hover {
+  transform: scale(1.05);
+  transition: 0.6s ease;
+}
+/* IMPROVEMENTS  */
+body {
+  background-color: coral;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
